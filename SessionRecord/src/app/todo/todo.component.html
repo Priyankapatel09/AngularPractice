@@ -1,0 +1,12 @@
+<h1>Todo Details</h1>
+Enter Todo ID : <input type="text" [(ngModel)]="id"><button (click)="getTodo(id)">Get Todo</button>
+<div *ngIf="todo">
+    userId: {{todo.userId}}
+    <br>
+    id: {{todo.id}}
+    <br>
+    title: {{todo.title}}
+    <br>
+    completed: {{todo.completed}}
+    <br>
+</div>
